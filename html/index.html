@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> 
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+
+	<title>SOP: Corefact Shipping</title>
+</head>
+<body>
+
+	<div id="wrapper">
+
+	<header>
+
+		<a href="http://www.corefact.com" target="_blank">
+		<img id="websiteLogo" alt="corefact logo" src="../img/Corefact.png"/></a>
+
+		<h1>How to print<br>Corefact shipping labels</h1>
+
+	</header>
+
+	<nav id="navbar">
+			
+		<ul>
+			<li class="active"><a href="index.html">Spreadsheet</a></li>
+			<li><a href="orderManager.html">Order manager</a></li>
+			<li><a href="shippingManager.html">Shipping manager</a></li>
+		</ul>
+	
+	</nav>
+	
+	<section>
+	
+	<h3>Step by step process</h3>
+	
+	<div class="well">
+		
+		<ol>
+			<li>Login to the order manager <a href="http://www.corefact.com/manage/accounts" target="_blank"> (Click here to access the order manager).</a> On the navigation bar, select <strong>ORDERS</strong>, then <strong>ORDER MANAGER</strong>. You should now be on the oder management page. Select the drop down menu for <strong>STATUS</strong> and select <strong>SHIPPING LABELS</strong> to filter for orders with the status of shipping labels.</li>
+			<li>On the order manager, check for internal orders by searching relevant names <em>(Jessica Cellars, Sophie Bel, Jacqualyn Lindo, Lisa Harris).</em> If applicable, account for the order(s) on the warehouse floor. Once accounted for, change the status of the order to delivered.</li>
+			<li>On the order manager, change the target date for orders that need weight validation <em>(Notepads, SSB, custom orders)</em> OR orders that are not ready to be shipped on the specific date. <em>(Sticky notes, perfect bound booklets, envelope orders)</em></li>
+			<li>Select the drop down menu for <strong>TARGET DATE</strong> and select <strong>SPECIFIC DATE</strong> to filter orders with the desired specific date. </li>
+			<li>Select <img id="excelIcon" alt="excel icon" src="../img/Excel.png"/> icon to download the displayed orders onto an excel spreadsheet. </li>
+			<li>Proceed to the <strong>BUSINESS RULES</strong> section below for instructions on how to prioritize and print labels for orders that require specific business rules.</li>
+			<li>On the navigation bar above, select <strong>ORDER MANAGER</strong> for instructions on how to print label(s) using the order manager.</li>
+			<li>On the navigation bar above, select <strong>SHIPPING MANAGER</strong> for instructions on how to print label(s) using the shipping manager.</li>
+		</ol>
+	
+	</div>
+
+	</section>
+
+	<main id="content">
+	
+	<section>
+
+	<h3>Business Rules</h3>
+
+	<div class="well">
+		
+		<ol id="roman">
+			<li>Open the spreadsheet. The columns should consist of the headers shown in the image below. 
+			<img id="excelHeaders" alt="excel headers" src="../img/excelHeader.png"/></li>
+			<li>Check column B <em>(General Notes)</em> and if there's a general note, make sure the order is processed as requested on the general note. </li>
+			<li>Filter column I <em>(Delivery option)</em> and look for orders with the delivery option of <strong>PRINT ONLY - 3RD PARTY: FEDEX</strong>. Copy the order number(s) and paste the order number(s) into the search form on the order manager. Once the order(s) display on the order manager, click on the order number to access the <strong>DELIVERY</strong> tab for each order. Verify that there isn't a <strong>SUB-DELIVERY OPTION</strong> that is > <strong>GROUND</strong>. If there is a sub-delivery option > ground, individually process the order on the shipping manager with the corresponding sub-delivery option.</li>
+			<li>Filter column G <em>(Address)</em> and look for addresses located in <strong>HAWAII</strong> along with <strong>PO BOXES</strong>. Copy the order number(s) and paste the order number(s) into the search form on the order manager. Figure out which flate rate package the order can fit in and create a <strong>USPS FLAT RATE LABEL</strong> on the order manager.</li>
+			<li>Filter column E <em>(Pricing Group)</em> and look for <strong>Large Enterprise - Tier B - CB Colorado</strong>. If the order has a delivery option of <strong>GROUND</strong> and has a <strong>COUPON CODE</strong>, upgrade the shipment to UPS 2nd Day Air.
+			<li>Filter column F <em>(Customer)</em> and look for <strong>identical customer names with identical delivery address</strong>. These orders are to be combined and shipped together on the shipping manager.</li>
+			<li>Last, filter column D (Pricing Category) and generate labels on the shipping manager by product code. Only search and print labels by product code for <strong>PF4, BR88, and PF</strong>. Once that is complete, search for todays date and print the remaining labels all at once. </li>
+		</ol>
+	</div>
+
+	</section>
+	</main>
+
+
+
+</body>
+</html>
